@@ -1,7 +1,7 @@
 BlitzDB
 =====
 
-BlitzDB the prototype of an in-memory OLTP database containing Blitzcrank, it is based on [Silo](http://people.csail.mit.edu/stephentu/papers/silo.pdf). 
+BlitzDB is an in-memory database prototype of using Blitzcrank for storage, it is based on [Silo](http://people.csail.mit.edu/stephentu/papers/silo.pdf). 
 
 Build
 -----
@@ -9,8 +9,7 @@ Build
 There are several options to build. `MODE` is an important variable
 governing the type of build. The default is `MODE=perf`, see the
 Makefile for more options. `DEBUG=1` triggers a debug build (off by
-default). There are two targets: the default target which builds the test suite, and
-`dbtest` which builds the benchmark suite. Examples:
+default). Examples:
 
     MODE=perf make -j dbtest
 
