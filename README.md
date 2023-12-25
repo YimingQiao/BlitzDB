@@ -6,6 +6,8 @@ BlitzDB is an in-memory database prototype of using Blitzcrank for storage, it i
 Build
 -----
 
+The build requirements are given in the file `BUILD`. 
+
 There are several options to build. `MODE` is an important variable
 governing the type of build. The default is `MODE=perf`, see the
 Makefile for more options. `DEBUG=1` triggers a debug build (off by
