@@ -227,7 +227,7 @@ $(O)/stats_client: $(O)/stats_client.o
 
 masstree/config.h: $(O)/buildstamp.masstree masstree/configure masstree/config.h.in
 	rm -f $@
-	cd masstree; ./configure $(MASSTREE_CONFIG)
+	cd masstree; chmod +x configure; ./configure $(MASSTREE_CONFIG)
 	if test -f $@; then touch $@; fi
 
 masstree/configure masstree/config.h.in: masstree/configure.ac

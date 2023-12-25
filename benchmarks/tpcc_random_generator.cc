@@ -55,7 +55,7 @@ void TPCCRandomGenerator::loadCorpus() {
 }
 
 bool TPCCRandomGenerator::loadStockDataCorpus() {
-  std::ifstream in("corpus/stock_data_corpus.txt");
+  std::ifstream in("benchmarks/workspace/corpus/stock_data_corpus.txt");
   if (in.fail()) {
     printf("Failed to open stock_data_corpus.txt\n");
     return false;
@@ -71,7 +71,7 @@ bool TPCCRandomGenerator::loadStockDataCorpus() {
 }
 
 bool TPCCRandomGenerator::loadFirstNames() {
-  std::ifstream in("corpus/first_names.txt");
+  std::ifstream in("benchmarks/workspace/corpus/first_names.txt");
   if (in.fail()) {
     printf("Failed to open first_names.txt\n");
     return false;
@@ -87,7 +87,7 @@ bool TPCCRandomGenerator::loadFirstNames() {
 }
 
 bool TPCCRandomGenerator::loadZip() {
-  std::ifstream in("corpus/zip_corpus.txt");
+  std::ifstream in("benchmarks/workspace/corpus/zip_corpus.txt");
   if (in.fail()) {
     printf("Failed to open zip.txt\n");
     return false;
@@ -107,7 +107,7 @@ bool TPCCRandomGenerator::loadZip() {
 }
 
 bool TPCCRandomGenerator::loadStreet() {
-  std::ifstream in("corpus/streets.txt");
+  std::ifstream in("benchmarks/workspace/corpus/streets.txt");
   if (in.fail()) {
     printf("Failed to open street.txt\n");
     return false;
@@ -123,7 +123,7 @@ bool TPCCRandomGenerator::loadStreet() {
 }
 
 bool TPCCRandomGenerator::loadDataDist() {
-  std::ifstream in("data_dist/stock_ytd_1m.txt");
+  std::ifstream in("benchmarks/workspace/data_dist/stock_ytd_1m.txt");
   if (in.fail()) {
     printf("Failed to open stock_ytd_1m.txt\n");
     return false;
@@ -136,7 +136,7 @@ bool TPCCRandomGenerator::loadDataDist() {
   }
   in.close();
 
-  in.open("data_dist/stock_order_cnt_1m.txt");
+  in.open("benchmarks/workspace/data_dist/stock_order_cnt_1m.txt");
   if (in.fail()) {
     printf("Failed to open stock_order_cnt_1m.txt\n");
     return false;
@@ -148,7 +148,7 @@ bool TPCCRandomGenerator::loadDataDist() {
   }
   in.close();
 
-  in.open("data_dist/stock_remote_cnt_1m.txt");
+  in.open("benchmarks/workspace/data_dist/stock_remote_cnt_1m.txt");
   if (in.fail()) {
     printf("Failed to open stock_remote_cnt_1m.txt\n");
     return false;
@@ -160,7 +160,7 @@ bool TPCCRandomGenerator::loadDataDist() {
   }
   in.close();
 
-  in.open("data_dist/customer_delivery_cnt_1m.txt");
+  in.open("benchmarks/workspace/data_dist/customer_delivery_cnt_1m.txt");
   if (in.fail()) {
     printf("Failed to open customer_delivery_cnt_1m.txt\n");
     return false;
@@ -172,7 +172,7 @@ bool TPCCRandomGenerator::loadDataDist() {
   }
   in.close();
 
-  in.open("data_dist/customer_balance_1m.txt");
+  in.open("benchmarks/workspace/data_dist/customer_balance_1m.txt");
   if (in.fail()) {
     printf("Failed to open customer_balance_1m.txt\n");
     return false;
@@ -184,7 +184,7 @@ bool TPCCRandomGenerator::loadDataDist() {
   }
   in.close();
 
-  in.open("data_dist/customer_ytd_payment_1m.txt");
+  in.open("benchmarks/workspace/data_dist/customer_ytd_payment_1m.txt");
   if (in.fail()) {
     printf("Failed to open customer_ytd_payment_1m.txt\n");
     return false;
@@ -196,7 +196,7 @@ bool TPCCRandomGenerator::loadDataDist() {
   }
   in.close();
 
-  in.open("data_dist/customer_payment_cnt_1m.txt");
+  in.open("benchmarks/workspace/data_dist/customer_payment_cnt_1m.txt");
   if (in.fail()) {
     printf("Failed to open customer_payment_cnt_1m.txt\n");
     return false;
