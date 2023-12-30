@@ -1,9 +1,9 @@
 BlitzDB
 =====
 
-BlitzDB is an in-memory database prototype of using Blitzcrank for storage, it is based on [Silo](http://people.csail.mit.edu/stephentu/papers/silo.pdf). 
+BlitzDB is an in-memory database prototype of using Blitzcrank for compressing the storage, it is based on [Silo](http://people.csail.mit.edu/stephentu/papers/silo.pdf). 
 
-[Blitzcrank](https://github.com/YimingQiao/libblitz) is a novel semantic compressor and we can use it as a library, it is also open-sourced. 
+Blitzcrank is a novel semantic compressor and it is open-sourced as a library [libblitz](https://github.com/YimingQiao/libblitz). It provides useful APIs and welcome to use it. 
 
 Build
 -----
